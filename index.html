@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarker</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Caption:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+<div class="container py-5">
+  <h1 class="mb-5">Bookmarker</h1>
+  <hr>
+<div class="title d-flex">
+    <h2>
+  <i class="fa-solid fa-bookmark"></i>
+  Bookmark your favorite sites
+  <i class="fa-solid fa-bookmark"></i>
+</h2>
+</div>
+<div id="error" >
+<div class="d-flex ">
+  <i class="fa-solid fa-book"></i>
+  <h4 class="pb-1">Site Name</h4>
+</div>
+  <input type="text" class="form-control mb-4" id="sitename"  placeholder="site name">
+  <div id="sitename-error" class="error-message text-start" style="display: none;"></div>
+
+  <div class="d-flex ">
+  <i class="fa-solid fa-link"></i>
+  <h4 class="pb-1">Site URL</h4>
+</div>
+  <input type="text" class="form-control mb-4"  id="siteurl"  placeholder="site url" >
+  <div id="siteurl-error" class="error-message text-start" style=" display: none;"></div>
+ <button class="btn btn-submit px-5" onclick="webSite()">Submit</button>
+</div>
+  <hr>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">index</th>
+        <th scope="col">Website Name</th>
+        <th scope="col">Visit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody id="data">
+      <tr>
+        <td scope="row">1</td>
+        <td></td>
+        <td><button class="btn btn-visit" onclick="visitWebsite()"><i class="fa-solid fa-eye pe-2"></i>Visit</button></td>
+        <td><button class="btn btn-delete" onclick="deleteWebsite()"><i class="fa-solid fa-trash pe-2"></i>Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>

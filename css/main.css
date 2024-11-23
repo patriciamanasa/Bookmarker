@@ -1,0 +1,62 @@
+body{
+  font-family: "PT Sans Caption", sans-serif !important;
+  background-color: #f7ecde !important;
+}
+.container{
+  text-align: center;
+}
+h1{
+  font-size: 50px !important;
+  font-family: "Pacifico", sans-serif;
+  position:relative;
+}
+h1::after{
+  content: "";
+  position: absolute;
+  text-align: center;
+  width: 24%;
+  height: 35%;
+  left: 38%;
+  bottom: 2px;
+  background-color: #ffcc70;
+  transition: height 1s;
+  z-index: -1;
+}
+h1:hover::after{
+  height: 65% ;
+}
+.title{
+  justify-content: center;
+}
+.title h2{
+  text-align: center;
+  font-family: "Righteous", sans-serif;
+  font-size: 25px;
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46% ,#ffcc70 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h4{
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  padding-left: 10px ;
+}
+.form-control:focus{
+  border-color: #d99c39 !important;
+  box-shadow: 0 0 0 0.25rem #fec26055 !important;
+}
+button{
+  background-color:#4158d0 !important; 
+  color: #fff !important;
+  cursor: pointer;
+}
+.btn-visit{
+  background-color: #3ca55c !important;
+}
+.btn-delete{
+  background-color:  #d30820 !important;
+}
+.error-message {
+  color: red ;
+  font-size: 14px;
+}
